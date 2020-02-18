@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sid Naik</title>
+
+    <link href="css/bootstrap_mod.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+
+      <!--Top 'navbar' + resume.pdf -->
+      <div class="flex-container">
+        <h1 id="title-text">Sid Naik</h1>
+        <ul class="navbutts">
+          <li>
+            <a class="flex-button" href="pages/tools.html"> &nbsp&nbsp Tools &nbsp&nbsp </a>
+          </li>
+          <li>
+            <a class="flex-button" href="images/sidResume.pdf">Resume</a>
+          </li>
+          <li>
+            <a class="flex-button" href="#contacts">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <!--Profile picture and AboutMe-->
+      <!-- <div class="flex-container" id="main">
+        <div id="flex-image">
+          <img id="profileImg" src="images/profile.jpg">
+          <h1 id="title-text">Sid Naik</h1>
+        </div>
+
+      </div>
+    -->
+      <div class="flex-container">
+        <ul id="focus">
+          <li>Tech Art</li>
+          <li>&nbsp|&nbsp</li>
+          <li>Protoyping, Tools, Optimization</li>
+          <li>&nbsp|&nbsp</li>
+          <li id="focus2">  and everything else about games. </li>
+        </ul>
+      </div>
+
+      <div>
+        <hr> <!--easy-peez visual division-->
+      </div>
+
+
+      <!--Portfolio Reel-->
+      <div class="flex-container">
+        <h1 id="focus3"> Tech Art Reel </h1>
+      </div>
+      <div class="flex-container">
+        <iframe class="video"  src="https://www.youtube.com/embed/zdw5qx9aXx0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+     <!-- All Tools. These should be github links with readmes.-->
+     <div class="flex-container">
+       <h1 id="focus3"> Tools </h1>
+     </div>
+     <div class="flex-container2" id="projects">
+       <div class="card">
+         <img class="card-img-top img-fluid" src="images/fracturetool.png" alt="fracture tool image">
+         <div class="card-block">
+           <h4 class="card-title">Vert-Group based cell fracture | Wizards Chess VR </h4>
+           <p class="card-text"> Opportunity: Blender's "Cell Fracture" object fracture tool doesn't work well on abnormal meshes like the chess pieces.</p>
+           <p class="card-text"> Solution: Wrote scripts to break each model by its vertex groups, fill holes in the mesh, and then use Cell Fracture on the broken limbs. Wasn't perfect, but reduced manual work significantly. </p>
+         </div>
+         <div class="card-footer">
+           <a class="text-muted card-button" href="https://github.com/snaik27/BlenderScripts">View on Github</a>
+         </div>
+       </div>
+       <div class="card">
+         <img class="card-img-top img-fluid" src="images/autolight.png" alt="mirror bones script image">
+         <div class="card-block">
+           <h4 class="card-title">Auto lightmap baking tool | DodoPeak</h4>
+           <p class="card-text"> Opportunity: A huge amount of time would be spent manually baking each level of the game within Unreal Engine after minor level changes and when new levels are made. </p>
+           <p class="card-text"> Solution: I made this tool to have Unreal bake lighting for all levels at the end of each day so we could package and QA immediately the next day. Faster iteration! </p>
+         </div>
+         <div class="card-footer">
+           <a class="text-muted card-button" href="pages/tools.html"> View writeup on my tools page</a>
+         </div>
+       </div>
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/autopackage.png" alt="fracture tool image">
+          <div class="card-block">
+            <h4 class="card-title">Auto game packaging tool | DodoPeak</h4>
+            <p class="card-text"> Opportunity: Same as the auto lightmass baking tool, a huge amount of time would be spent packaging the game for many devices for QA and testing. </p>
+            <p class="card-text"> Solution: I made this tool to let us package the game for different devices so we don't have to open Unreal and have one of us devoted to pressing the "package game" button over and over. </p>
+          </div>
+          <div class="card-footer">
+            <a class="text-muted card-button" href="pages/tools.html"> View writeup on my tools page</a>
+          </div>
+        </div>
+      </div>
+      <div class="flex-container2" id="projects">
+         <div class="card">
+           <img class="card-img-top img-fluid" src="images/mirrorbones.png" alt="mirror bones script image">
+           <div class="card-block">
+             <h4 class="card-title">Rigging automation | Wizards Chess VR</h4>
+             <p class="card-text"> Opportunity: All my rigs are symmterical, so rigging both halves of any rig quickly became repetitive.</p>
+             <p class="card-text"> Solution: Scripts to mirror position, vertex weights, and bone constraints from the left side to the right for symmetric models </p>
+           </div>
+           <div class="card-footer">
+             <a class="text-muted card-button" href="https://github.com/snaik27/BlenderScripts">View on Github</a>
+           </div>
+         </div>
+         <div class="card">
+           <img class="card-img-top img-fluid" src="images/animviewer.png" alt="in engine model and animation viewer image">
+           <div class="card-block">
+             <h4 class="card-title">In Engine model & animation viewer | Wizards Chess VR</h4>
+             <p class="card-text"> Opportunity: Playing a game of chess to view each animation is not efficient for iterative improvements.</p>
+             <p class="card-text"> Solution: Made a Unity scene that let me look at models and animations quickly in the editor. Doubles as a bonus "level" in Wizards Chess VR.</p>
+           </div>
+           <div class="card-footer">
+             <a class="card-button" href="https://gamejolt.com/games/WizardsChessVR/420660">View in the game</a>
+           </div>
+         </div>
+     </div>
+
+
+
+
+
+
+
+
+
+
+     <!-- All game projects. These should be links to the games themselves or eric's twitch -->
+     <div class="flex-container">
+       <h1 id="focus3"> Games & Experiences </h1>
+     </div>
+     <div class="flex-container2" id="projects">
+       <div class="card">
+         <img class="card-img-top img-fluid" src="images/megamanLegends.png" alt="Megaman Legends in Unity engine">
+         <div class="card-block">
+           <h4 class="card-title">Megaman Ancients</h4>
+           <p class="card-text"> Currently working on a fan game for Megaman Legends 3</p>
+           <p class="card-text"> Developing procedural animation system, expanding my shader knowledge, and creating a pipeline for major assets for good practice. </p>
+           <p class="card-text"> <b>Technologies</b><br /><i> Unity, Blender, C#,HLSL, Python</i></p>
+         </div>
+         <div class="card-footer">
+           <a class="card-button" href="https://twitter.com/sidwasnothere">Follow my progress on Twitter </a>
+         </div>
+       </div>
+       <div class="card">
+         <img class="card-img-top img-fluid" src="images/DodoPeak.png" alt="Dodo Peak image">
+         <div class="card-block">
+           <h4 class="card-title">Dodo Peak [Freelance]</h4>
+           <p class="card-text"> Arcade style game in which you, the mother Dodo, collect your lost baby dodo eggs. Find your babies while dodging enemies and obstacles throughout various worlds. </p>
+           <p class="card-text"> <b>Technologies</b><br /><i> Unreal, Houdini, Blender, Substance Designer, Python, GitKraken, Instruments (Mac)</i></p>
+         </div>
+         <div class="card-footer">
+           <a class="card-button" href="https://www.dodopeak.com/">View on DodoPeak website </a>
+         </div>
+       </div>
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/wcvr.png" alt="Wizards Chess image">
+          <div class="card-block">
+            <h4 class="card-title">Wizards Chess VR</h4>
+            <p class="card-text"> Solo fan game project, players play a game of wizards chess in the great hall of hogwarts. </p>
+            <p class="card-text"> <b>Technologies</b><br /><i> Unity, Blender, Substance Painter, C#, Python, SteamVR</i></p>
+          </div>
+          <div class="card-footer">
+            <a class="card-button" href="https://gamejolt.com/games/WizardsChessVR/420660">View on Gamejolt</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex-container2" id="projects">
+        <div class="card"> <!--.card class modifications: background color:#2b2b2b, margin:20px added-->
+          <img class="card-img-top img-fluid" src="images/freelancework.png" alt="VR Knight avatar posing with skeleton avatar in game">
+          <div class="card-block">
+            <h4 class="card-title">Yarwad XR Talk/Game Show [Freelance]</h4>
+            <p class="card-text"> A talk show with a wave-shooter frame. Networked multiplayer to allow guests on the show. Automated half of- and provided documentation for new scene setup process. </p>
+            <p class="card-text"> <b>Technologies</b><br /><i> Unity, C#, SteamVR, Normcore</i></p>
+          </div>
+          <div class="card-footer"> <!--  .card-footer modifications: background-color: @2b2b2b, border-width: 2px 0 2px 0, border-color: #D47300, border-style:solid. Removed border-top-->
+            <a class="text-muted card-button"  href="https://www.twitch.tv/yarwad/videos">Link to Yarward's Twitch</a> <!--text-muted removed from bootstrap bc I had it on my style sheet anyway-->
+          </div>
+        </div>
+        <!--
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/prisonbreak.png" alt="Prison Break VR image">
+          <div class="card-block">
+            <h4 class="card-title">Prison Break VR</h4>
+            <p class="card-text"> UnityNYC XR game jam project. In this prison break experience, you must retrieve a package from the warden's office without getting caught but things go wrong fast. </p>
+            <p class="card-text"> <b>Technologies</b><br /><i> Unity, Blender, C#, DepthKit, SteamVR</i></p>
+          </div>
+          <div class="card-footer">
+            <a class="text-muted card-button" href="https://sidwasnothere.itch.io/preposterous-prison-break">View on Itch.io</a>
+          </div>
+        </div> -->
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+     <!-- All Shaders/VFX. These should be youtube links probably with sources wherever needed -->
+     <div class="flex-container">
+       <h1 id="focus3"> VFX </h1>
+     </div>
+     <div class="flex-container2" id="projects">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/reparo.png" alt="mirror bones script image">
+          <div class="card-block">
+            <h4 class="card-title">Magical Chessboard repair</h4>
+            <p class="card-text"> Chessboard repair effect inspired by Molly Weasley's cleaning magic </p>
+          </div>
+          <div class="card-footer">
+            <a class="text-muted card-button" href="https://www.artstation.com/artwork/L2B3lr">View on Artstation</a>
+          </div>
+        </div>
+         <div class="card"> <!--.card class modifications: background color:#2b2b2b, margin:20px added-->
+           <img class="card-img-top img-fluid" src="images/destruction.png" alt="knight destroyed by rook image">
+           <div class="card-block">
+             <h4 class="card-title">Chess piece destruction effect</h4>
+             <p class="card-text"> It's wizard's chess, the pieces need to break. </p>
+           </div>
+           <div class="card-footer"> <!--  .card-footer modifications: background-color: @2b2b2b, border-width: 2px 0 2px 0, border-color: #D47300, border-style:solid. Removed border-top-->
+             <a class="text-muted card-button" href="https://www.artstation.com/artwork/3oxdxB">View on Artstation</a>
+           </div>
+         </div>
+       </div>
+
+     <!-- All else (environment art/models/rigs/animations/etc. These should be artstation links) -->
+     <div class="flex-container">
+       <h1 id="focus3"> Other Art </h1>
+     </div>
+     <div class="flex-container2" id="projects">
+       <div class="card"> <!--.card class modifications: background color:#2b2b2b, margin:20px added-->
+         <img class="card-img-top img-fluid" src="images/chesspieces.png" alt="great sky image">
+         <div class="card-block">
+           <h4 class="card-title"> Characters & Animations: Chess pieces</h4>
+           <p class="card-text"> Models, rigs, animations for Wizards Chess VR.</p>
+           <p class="card-text"> Fun fact: Only 3 animations are shown in the movie: Queen attack, Pawn attack, and King's checkmate animation! I made the rest of the animations to fit with the look of those 3. </p>
+         </div>
+         <div class="card-footer"> <!--  .card-footer modifications: background-color: @2b2b2b, border-width: 2px 0 2px 0, border-color: #D47300, border-style:solid. Removed border-top-->
+           <a class="text-muted card-button" href="https://www.artstation.com/sidwasnothere/albums/1581042">View on Artstation</a>
+         </div>
+       </div>
+       <div class="card"> <!--.card class modifications: background color:#2b2b2b, margin:20px added-->
+         <img class="card-img-top img-fluid" src="images/dodoOutfits.png" alt="dodo outfits image">
+         <div class="card-block">
+           <h4 class="card-title"> Models: Dodo Outfits </h4>
+           <p class="card-text"> Models for different Dodo outfits in Dodo Peak.</p>
+           <p class="card-text"> Fun fact: Dodos go faster when they wear different clothes! </p>
+         </div>
+         <div class="card-footer"> <!--  .card-footer modifications: background-color: @2b2b2b, border-width: 2px 0 2px 0, border-color: #D47300, border-style:solid. Removed border-top-->
+           <a class="text-muted card-button" href="https://sidwasnothere.artstation.com/albums/1901482">View on Artstation</a>
+         </div>
+       </div>
+       <div class="card">
+         <img class="card-img-top img-fluid" src="images/megaman.png  " alt="megaman trigger render">
+         <div class="card-block">
+           <h4 class="card-title"> Characters & Animations: Megaman Trigger </h4>
+           <p class="card-text"> Model, rig, animations for my Megaman Legends Reimaginated fan game. </p>
+           <p class="card-text"> Semi-Fun fact: It is almost impossible to find the original Megaman Legends Artbooks!  </p>
+         </div>
+         <div class="card-footer">
+           <a class="card-button" href="https://sidwasnothere.artstation.com/albums/1768492">View on Artstation</a>
+         </div>
+       </div>
+     </div>
+
+      <div class="flex-container2" id="projects">
+        <div class="card">
+          <img class="card-img-top img-fluid" src="images/wcvr.png" alt="great hall image">
+          <div class="card-block">
+            <h4 class="card-title"> Environment: Great Hall of Hogwarts </h4>
+            <p class="card-text"> Environment I made for Wizards Chess VR. </p>
+            <p class="card-text"> Fun fact: The great hall you see in the HP movies 1-6 is changed in movies 7 & 8. The hall is almost twice as tall, everything above the height of the braziers is elongated!  </p>
+          </div>
+          <div class="card-footer">
+            <a class="card-button" href="https://www.artstation.com/artwork/qAY0aR">View on Artstation</a>
+          </div>
+        </div>
+      </div>
+
+
+     <!--All olddd projects. Each project uses modified bootstrap cards-->
+     <div class="flex-container">
+       <h1 id="focus3"> Old work</h1>
+     </div>
+     <div class="flex-container2" id="projects">
+       <div class="card">
+         <img class="card-img-top img-fluid" src="images/pythonLogo.png" alt="Python programming language logo">
+         <div class="card-block">
+           <h4 class="card-title">Python Data Structures and Algorithms</h4>
+           <p class="card-text"> A repository of my code and notes for the Data Structures and Algorithms in books such as Cracking the Coding Interview </p>
+           <p class="card-text"> <b>Technologies</b><br /><i>Python, my notebook, my whiteboard</i></p>
+         </div>
+         <div class="card-footer">
+           <a class="text-muted card-button" href="https://github.com/snaik27/PythonDSandA">View on GitHub</a>
+         </div>
+       </div>
+       <div class="card">
+         <img class="card-img-top img-fluid" src="images/smashlogo.jpg" alt="Super Smash Bros logo">
+         <div class="card-block">
+           <h4 class="card-title">Super Smash Bros. Reddit Bot</h4>
+           <p class="card-text">A bot for the Super Smash Bros. Subreddit that defines terms or retrieves character data when requested</p>
+           <p class="card-text"> <b>Technologies</b><br /><i> Heroku, Python, BeautifulSoup, PRAW, Tabulate</i></p>
+         </div>
+         <div class="card-footer">
+           <a class="card-button" href="https://github.com/snaik27/ssbbot">View on Github</a>
+         </div>
+       </div>
+       <div class="card"> <!--.card class modifications: background color:#2b2b2b, margin:20px added-->
+         <img class="card-img-top img-fluid" src="images/room.png" alt="Room render">
+         <div class="card-block">
+           <h4 class="card-title">Interior Modeling</h4>
+           <p class="card-text"> A 3D model of my room made with Blender </p>
+           <p class="card-text"> <b>Technologies</b><br /><i> Blender, Gimp</i></p>
+         </div>
+         <div class="card-footer"> <!--  .card-footer modifications: background-color: @2b2b2b, border-width: 2px 0 2px 0, border-color: #D47300, border-style:solid. Removed border-top-->
+           <a class="text-muted card-button"  href="https://www.artstation.com/artwork/Z11eG">View on Artstation</a> <!--text-muted removed from bootstrap bc I had it on my style sheet anyway-->
+         </div>
+       </div>
+     </div>
+     <div class="flex-container2">
+       <div class="card">
+         <img class="card-img-top img-fluid" src="images/titanic.jpg" alt="Titanic image">
+         <div class="card-block">
+           <h4 class="card-title">Titanic Survivors Predictions</h4>
+           <p class="card-text"> Predicted survival outcomes based on the given data set by Kaggle </p>
+           <p class="card-text"> <b>Technologies</b><br /><i>Pandas, Numpy, Sci Kit Learn, Matplotlib, Seaborn</i></p>
+         </div>
+         <div class="card-footer">
+           <a class="text-muted card-button" href="https://github.com/snaik27/Python-Titanic">View on GitHub</a>
+         </div>
+       </div>
+     </div>
+
+     <div class="flex-container">
+       <hr>
+     </div>
+
+      <!--ways to contact me-->
+    <div class="flex-container">
+      <ul class="navbutts" id="contacts">
+        <li>
+          <a class="fa fa-linkedin" href="http://www.linkedin.com/in/sidharthrnaik" alt="Linkedin link"></a>
+        </li>
+        <li>
+          <a class="fa fa-github" href="https://github.com/snaik27" alt="Github link"></a>
+        </li>
+        <li>
+          <a class="fa fa-twitter" href="https://twitter.com/sidwasnothere" alt="Github link"></a>
+        </li>
+        <li>
+          <a class="fa fa-artstation" href="https://sidwasnothere.artstation.com/">
+              <img  class="fa fa-artstation" src="images/artstation.png" alt="Artstation link">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="flex-container footer">
+      <p> Have a good day! </p>
+    </div>
+
+  </div>
+
+</body>

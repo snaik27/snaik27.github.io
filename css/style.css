@@ -1,0 +1,446 @@
+body {/*targets the whole html body*/
+  line-height: 1.1;
+  font-family: 'Lato', sans-serif;
+  color: #F2F2F2; /*text color. basic color scheme at https://color.adobe.com/Phantom-Compass-color-theme-10292594/ */
+  background: #F2F2F2; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(38,38,38,15) 20%, rgba(20,107,115,45) 80%, rgba(38,38,38,15) 100%);; /*Safari 5.1-6 and Chrome*/
+  background: -o-linear-gradient(rgba(38,38,38,15) 20%, rgba(20,107,115,45) 80%, rgba(38,38,38,15) 100%);; /*Opera 11.1-12*/
+  background: -moz-linear-gradient(rgba(38,38,38,15) 20%, rgba(20,107,115,45) 80%, rgba(38,38,38,15) 100%);; /*Fx 3.6-15*/
+  background: linear-gradient(rgba(38,38,38,15) 20%, rgba(20,107,115,45) 80%, rgba(38,38,38,15) 100%); /*Standard*/
+}
+
+hr {
+  border: none;
+  height: 1px;
+  width: 80%;
+  background-color: #D47300;
+  margin:auto;
+}
+#hrother{
+  border: none;
+  height: 1px;
+  width: 80%;
+  background-color: #D47300;
+  margin:left;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display:inline-flex;
+  text-align:center;
+  text-decoration:none;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 10px;
+}
+
+/*Flex-container */
+.flex-container{
+    margin:auto;
+    width: 80%;
+    padding: 20px 0 10px 0;
+}
+.flex-container2{
+    margin:auto;
+    width: 95%;
+    padding: 20px 0 10px 0;
+}
+.flex-container3{
+  margin: 5px 5px 5px 5px;
+  width: 40%;
+  padding: 0 0 0 0;
+}
+.container{
+  margin:auto;
+  padding: none;
+  width: 100%;
+  min-width: 95%;
+}
+.video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+  height: 720px;
+}
+
+/* Profile Picture, Aboutme, and my focus*/
+#flex-image{
+  margin: 80px 0 0 0;
+}
+#profileImg{
+  border-radius: 50%;
+  border-style:solid;
+  border-width: 0 0 2px 0;
+  border-bottom-color: #BF6E34;
+}
+#title-text {
+  color: #F2F2F2;
+  font-weight: 300;
+  font-size: 3em;
+  padding: 20px 0 0 200px;
+}
+#tool-text{
+  text-align:left;
+}
+#aboutMe {
+  color: #F2F2F2;
+  text-align:justify;
+  margin:auto;
+  width:100%;
+  line-height: 120%;
+  font-size: 1em;
+}
+#focus{
+  color: #D47300;
+  font-weight: 400;
+  font-size: 1.1em;
+  padding: 20px 0px 20px 30px;
+  margin:auto;
+}
+#focus2{
+  color: #D47300;
+  font-weight: 400;
+  font-size: 0.5em;
+  padding: 5px 0px 5px 5px;
+  margin: auto;
+}
+#focus3{
+  color: #D47300;
+  font-weight: 400;
+  font-size: 1.5em;
+  margin:left;
+}
+#focus4{
+  padding: 20px 0px 20px 30px;
+  margin:auto;
+}
+
+/*Nav Buttons */
+.flex-button{
+  background-color: #2B2B2B;
+  margin: 20px 8px 0px 0px;
+  padding: 7px 5px 7px 4px;
+  color: #F2F2F2;
+  border-width: 0 0 1px 0;
+  border-bottom-color: #FF8D00;
+  border-bottom-style: solid;
+  border-radius: 0.25rem;
+}
+.navbutts{
+  padding:2px;
+  margin:auto;
+}
+
+.flex-button:hover{
+  border-bottom-color: #FFAA44;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition:all 0.3s;
+  text-decoration:none;
+  color: #F2F2F2;
+  text-decoration-color: #FFFFFF;
+  background-color: #373B3D;
+}
+.card-block {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 1rem;
+}
+
+/*Card Buttons */
+.card-title {
+  margin-bottom: 0.75rem;
+  margin-left: 0px;
+}
+.card-button{
+  color: #B5B5B5;
+  text-decoration-color: none;
+}
+.card-button:hover{
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition:all 0.3s;
+  text-decoration:none;
+  color: #FFFFFF;
+  text-decoration-color: #FFFFFF;
+}
+.card:hover{
+  box-shadow: 0 20px 50px -10px #7F4200;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition:all 0.5s;
+}
+
+/* Social Media Buttons */
+.fa {
+  font-size: 30px;
+  width: 45px;
+  text-align: center;
+  text-decoration: none;
+  margin: auto 1px auto 3px;
+  padding: auto 1px auto 3px;
+  color:#FF8D00;
+}
+.fa .fa-artstation{
+  width:30px;
+  height:auto;
+}
+/* I will use this if fa is ever updated to include the artstation logo
+
+.fa:hover {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition:all 0.3s;
+  text-decoration:none;
+  color: #FFFFFF;
+  text-decoration-color: #FFFFFF;
+}*/
+.fa:hover{
+  text-decoration:none;
+  color:#FF8D00;
+}
+.footer{
+  padding:0 30px 0 0;
+  color: #141414;
+  text-align:right;
+}
+.footer:hover{
+  text-align: center;
+  color: #B5B5B5;
+}
+
+@media (min-width: 300px){
+  .flex-container{
+    margin:auto;
+    width: 100%;
+    padding: 20px 0 10px 0;
+    display: inline-flex;
+  }
+  .flex-container2{
+    margin:auto;
+    width: 100%;
+    padding: 20px 0 10px 0;
+    display:inline-flex;
+  }
+  .flex-button{
+    background-color: #2B2B2B;
+    margin:auto;
+    padding:auto;
+    color: #F2F2F2;
+    border-width: 0 0 1px 0;
+    border-bottom-color: #FF8D00;
+    border-bottom-style: solid;
+    border-radius: 0.25rem;
+  }
+  .tool-description{
+      margin: 0px auto 0px 0px;
+      font-size: 0.5em;
+    }
+  .card-title {
+    margin-bottom: 0.75rem;
+    margin-left: 0px;
+    font-size: 0.5em;
+  }
+  .card-text{
+    font-size: 0.5em;
+  }
+  .card-block {
+    -webkit-box-flex: .25;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    padding: .25rem;
+  }
+
+.card-footer {
+    text-align: center;
+    padding: 0.25rem .75rem;
+    font-size: 0.5em;
+    background-color: #212226;
+    border-style:solid;
+    border-width: 1px 0 1px 0;
+    border-color: #FF8D00;
+    color: #B5B5B5;
+  }
+
+  .video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 112px;
+  }
+
+  #title-text {
+    color: #F2F2F2;
+    font-weight: 300;
+    font-size: 2em;
+    padding: 20px 0 0 20px;
+  }
+
+  #fleximage{
+    padding-left: 100px;
+  }
+  #aboutMe{
+    padding-top: 150px;
+    width:50%;
+  }
+  #focus{
+    margin: auto;
+    padding: 0 0 0 0;
+  }
+  #focus2{
+    color: #D47300;
+    font-weight: 400;
+    font-size: 0.5em;
+    margin: auto;
+  }
+  #focus3{
+    color: #D47300;
+    font-weight: 400;
+    font-size: 1em;
+    margin:left;
+  }
+  #focus4{
+    padding: 0 0 0 0;
+    margin:auto;
+  }
+
+  .flex-button{
+    padding: 10px;
+  }
+
+
+  .fa{
+    margin:auto;
+    padding: auto 10px auto 10px;
+  }
+
+  .card{
+    max-width: 33%;
+    margin: 0px auto 0px auto;
+    padding: 0 0 0 0;
+  }
+}
+
+
+@media (min-width: 720px){
+  hr {
+    border: none;
+    height: 1px;
+    width: 80%;
+    background-color: #D47300;
+    margin: 50px auto 50px auto;
+    padding:auto;
+  }
+
+  .tool-description{
+    margin: 0px auto 0px 0px;
+    font-size: 1em;
+  }
+
+  .card-footer {
+    padding: 0.75rem 1.25rem;
+    background-color: #212226;
+    border-style:solid;
+    border-width: 1px 0 1px 0;
+    border-color: #FF8D00;
+    color: #B5B5B5;
+    font-size: 1em;
+  }
+
+  .card-title {
+    margin-bottom: 0.75rem;
+    margin-left: 0px;
+    font-size: 1em;
+  }
+  .card-text{
+    font-size: 1em;
+  }
+  .flex-button{
+    background-color: #2B2B2B;
+    margin: 20px 8px 0px 0px;
+    padding: 7px 5px 7px 4px;
+    color: #F2F2F2;
+    border-width: 0 0 1px 0;
+    border-bottom-color: #FF8D00;
+    border-bottom-style: solid;
+    border-radius: 0.25rem;
+  }
+  .card-block {
+    -webkit-box-flex: .5;
+    -webkit-flex: 1 1 auto;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+    padding: .5rem;
+  }
+
+  .video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 640px;
+    height: 480px;
+  }
+  #main{
+    padding: 100px auto 100px auto;
+  }
+  #title-text {
+    color: #F2F2F2;
+    font-weight: 300;
+    font-size: 3em;
+    padding: 20px 0 0 200px;
+  }
+
+  #focus{
+    color: #D47300;
+    font-weight: 400;
+    font-size: 1.4em;
+    margin:auto;
+  }
+  #focus3{
+    color: #D47300;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin:left;
+  }
+  #fleximage{
+  }
+  #aboutMe{
+    font-size: 1.1em;
+  }
+
+}
+@media (min-width: 1280px){
+  .video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+    height: 576px;
+  }
+}
+
+
+
+/*  COLORS
+  #B05E0D
+  #FF8C00
+	#2B2B2B
+	#7F4200
+	#171717
+	#ffffff
+  #F2F2F2
+  #B5B5B5
+  */
