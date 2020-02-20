@@ -23,6 +23,9 @@
         <h1 id="title-text">Sid Naik</h1>
         <ul class="navbutts">
           <li>
+            <a class="flex-button" href="index.html"> &nbsp&nbsp Home &nbsp&nbsp </a>
+          </li>
+          <li>
             <a class="flex-button" href="pages/tools.html"> &nbsp&nbsp Tools &nbsp&nbsp </a>
           </li>
           <li>
@@ -76,7 +79,8 @@
          <div class="card-block">
            <h4 class="card-title">Vert-Group based cell fracture | Wizards Chess VR </h4>
            <p class="card-text"> Opportunity: Blender's "Cell Fracture" object fracture tool doesn't work well on abnormal meshes like the chess pieces.</p>
-           <p class="card-text"> Solution: Wrote scripts to break each model by its vertex groups, fill holes in the mesh, and then use Cell Fracture on the broken limbs. Wasn't perfect, but reduced manual work significantly. </p>
+           <p class="card-text"> Solution: Wrote scripts to break each model by its vertex groups, fill holes in the mesh, and then use Cell Fracture on the broken limbs.</p>
+           <p class="card-text"> Result: Wasn't perfect, but reduced manual work from about half a work day to break a character to about 1-2 hours per character. </p>
          </div>
          <div class="card-footer">
            <a class="text-muted card-button" href="https://github.com/snaik27/BlenderScripts">View on Github</a>
@@ -87,7 +91,8 @@
          <div class="card-block">
            <h4 class="card-title">Auto lightmap baking tool | DodoPeak</h4>
            <p class="card-text"> Opportunity: A huge amount of time would be spent manually baking each level of the game within Unreal Engine after minor level changes and when new levels are made. </p>
-           <p class="card-text"> Solution: I made this tool to have Unreal bake lighting for all levels at the end of each day so we could package and QA immediately the next day. Faster iteration! </p>
+           <p class="card-text"> Solution: I made this tool to have Unreal bake lighting for all levels at the end of each day so we could package and QA immediately the next day. </p>
+           <p class="card-text"> Result: Dope. The alternatives of baking 30-50 levels(at ~5-10 minutes per level) or baking only a few levels for testing is unfeasible and significantly less useful respectively. Faster iteration!</p>
          </div>
          <div class="card-footer">
            <a class="text-muted card-button" href="pages/tools.html"> View writeup on my tools page</a>
@@ -99,6 +104,7 @@
             <h4 class="card-title">Auto game packaging tool | DodoPeak</h4>
             <p class="card-text"> Opportunity: Same as the auto lightmass baking tool, a huge amount of time would be spent packaging the game for many devices for QA and testing. </p>
             <p class="card-text"> Solution: I made this tool to let us package the game for different devices so we don't have to open Unreal and have one of us devoted to pressing the "package game" button over and over. </p>
+            <p class="card-text"> Result: Failure. We did not find the tool significantly useful in practice for this project, though I am sure it would be extremely useful for studios with a dedicated QA team or a game available on more platforms. Automated packaging for all platforms overnight, ready to then test the next morning! </p>
           </div>
           <div class="card-footer">
             <a class="text-muted card-button" href="pages/tools.html"> View writeup on my tools page</a>
@@ -112,6 +118,7 @@
              <h4 class="card-title">Rigging automation | Wizards Chess VR</h4>
              <p class="card-text"> Opportunity: All my rigs are symmterical, so rigging both halves of any rig quickly became repetitive.</p>
              <p class="card-text"> Solution: Scripts to mirror position, vertex weights, and bone constraints from the left side to the right for symmetric models </p>
+             <p class="card-text"> Result: Dope. Halved the rigging process for both of my personal game projects so far, and I'm sure will be useful well into the future. </p>
            </div>
            <div class="card-footer">
              <a class="text-muted card-button" href="https://github.com/snaik27/BlenderScripts">View on Github</a>
@@ -120,9 +127,10 @@
          <div class="card">
            <img class="card-img-top img-fluid" src="images/animviewer.png" alt="in engine model and animation viewer image">
            <div class="card-block">
-             <h4 class="card-title">In Engine model & animation viewer | Wizards Chess VR</h4>
+             <h4 class="card-title">In-Engine model & animation viewer | Wizards Chess VR</h4>
              <p class="card-text"> Opportunity: Playing a game of chess to view each animation is not efficient for iterative improvements.</p>
              <p class="card-text"> Solution: Made a Unity scene that let me look at models and animations quickly in the editor. Doubles as a bonus "level" in Wizards Chess VR.</p>
+             <p class="card-text"> Result: Dope. Hard to say how much time this saved me, but I couldn't have the animations work properly in game without it. Previewing animations in-engine is necessary, playing a game of chess every time I want to preview is not. </p>
            </div>
            <div class="card-footer">
              <a class="card-button" href="https://gamejolt.com/games/WizardsChessVR/420660">View in the game</a>

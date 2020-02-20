@@ -25,6 +25,9 @@
             <a class="flex-button" href="../index.html">&nbsp &nbsp Home &nbsp &nbsp </a>
           </li>
           <li>
+            <a class="flex-button" href="tools.html"> &nbsp&nbsp Tools &nbsp&nbsp </a>
+          </li>
+          <li>
             <a class="flex-button" href="../images/sidResume.pdf">Resume</a>
           </li>
           <li>
@@ -47,9 +50,10 @@
          <div class="card" style="max-width: 25%">
            <img class="card-img-top img-fluid" src="../images/fracturetool.png" alt="fracture tool image">
            <div class="card-block">
-             <h4 class="card-title">Vert-Group based model fracture</h4>
-             <p class="card-text"> Problem: Blender's "Cell Fracture" object fracture tool doesn't work well on abnormal meshes like the chess pieces. And I didn't know Houdini existed yet. </p>
-             <p class="card-text"> Solution: Wrote scripts that break each model by its vertex groups, fills holes in the mesh, and then uses Cell Fracture on the broken limbs. Wasn't perfect, but reduced manual work significantly. </p>
+             <h4 class="card-title">Vert-Group based cell fracture | Wizards Chess VR </h4>
+             <p class="card-text"> Opportunity: Blender's "Cell Fracture" object fracture tool doesn't work well on abnormal meshes like the chess pieces.</p>
+             <p class="card-text"> Solution: Wrote scripts to break each model by its vertex groups, fill holes in the mesh, and then use Cell Fracture on the broken limbs.</p>
+             <p class="card-text"> Result: Wasn't perfect, but reduced manual work from about half a work day to break a character to about 1-2 hours per character. </p>
            </div>
            <div class="card-footer">
              <a class="text-muted card-button" href="https://github.com/snaik27/BlenderScripts">View on Github</a>
@@ -73,12 +77,13 @@
      </div>
 
       <div class="flex-container2" id="projects">
-        <div class="card" style="max-width: 25%">
+        <div class="card" style="min-width: 25%">
           <img class="card-img-top img-fluid" src="../images/autolight.png" alt="mirror bones script image">
           <div class="card-block">
-            <h4 class="card-title">Auto lightmap baking tool  | DodoPeak</h4>
-            <p class="card-text"> Problem: A huge amount of time would be spent manually baking each level of the game within Unreal Engine after minor level changes and when new levels are made </p>
-            <p class="card-text"> Solution: I made this tool to have Unreal bake lighting for all levels at the end of each day so we could package and QA immediately the next day. Faster iteration! </p>
+            <h4 class="card-title">Auto lightmap baking tool | DodoPeak</h4>
+            <p class="card-text"> Opportunity: A huge amount of time would be spent manually baking each level of the game within Unreal Engine after minor level changes and when new levels are made. </p>
+            <p class="card-text"> Solution: I made this tool to have Unreal bake lighting for all levels at the end of each day so we could package and QA immediately the next day. </p>
+            <p class="card-text"> Result: Dope. The alternatives of baking 30-50 levels(at ~5-10 minutes per level) or baking only a few levels for testing is unfeasible and significantly less useful respectively. Faster iteration!</p>
           </div>
           <div class="card-footer">
             <a class="text-muted card-button" href=""> -------</a>
@@ -88,7 +93,7 @@
           <ul class="flex-contrainer3 tool-description">
 
             <li><h3> How It Works:</h3></li>
-            <li id="tool-text">Unreal Engine has an awesome set of ".ini" files that let developers easily setup graphics and device settings (And probably more, I haven't touched all of it). These are found either in your UE install folder [Epic Games/UE/Engine/Config] with the filenames all starting with "Base". Now, you can change these base .ini's if you want but I recommend not doing that as those changes will affect all your UE projects.</li>
+            <li id="tool-text">Unreal Engine has an awesome set of ".ini" files that let developers easily setup graphics and device settings (And probably more, I haven't touched all of it). These are found in your UE install folder [Epic Games/UE/Engine/Config] with the filenames all starting with "Base". Now, you can change these base .ini's if you want but I recommend not doing that as those changes will affect all your UE projects.</li>
             <br/><br/>
             <li id="tool-text">What you should do is take a look at your project file itself. That will contain another Config folder in which you'll find some of the same .ini's you found in your install folder but these won't have the "Base" filename prefix. These files affect only the project that contains them so editing these isn't a problem. By default you'll see 3-4 files in there, one of which is DefaultGame.ini. This file contains all the maps you include in your game along with a ton of settings you can set manually within UE. What I wanted to do was take the maplist available within the .ini and use that to generate lightmaps for all our maps. That sounds much more complicated than it is thanks to Unreal's built-in Automation tools. One of these tools, called the Unreal Automation Tool (UAT) lets you run Unreal console commands within the terminal (MacOS/Linux) and the console (Windows). </li>
             <br/><br/>
@@ -105,12 +110,13 @@
       </div>
 
       <div class="flex-container2" id="projects">
-         <div class="card" style="max-width: 25%">
+         <div class="card" style="min-width: 25%">
            <img class="card-img-top img-fluid" src="../images/autopackage.png" alt="fracture tool image">
            <div class="card-block">
-             <h4 class="card-title">Auto game packaging tool  | DodoPeak</h4>
-             <p class="card-text"> Problem: Same as the auto lightmass baking tool, a huge amount of time would be spent packaging the game for many devices for QA and testing. </p>
-             <p class="card-text"> Solution: I made this tool to let us package the game for different devices so we don't have to open Unreal and have one of us devoted to pressing the "package game" button over and over. Unfortunately this didn't work out as well as I'd hoped in practice since we were constantly packaging to iterate anyway. </p>
+             <h4 class="card-title">Auto game packaging tool | DodoPeak</h4>
+             <p class="card-text"> Opportunity: Same as the auto lightmass baking tool, a huge amount of time would be spent packaging the game for many devices for QA and testing. </p>
+             <p class="card-text"> Solution: I made this tool to let us package the game for different devices so we don't have to open Unreal and have one of us devoted to pressing the "package game" button over and over. </p>
+             <p class="card-text"> Result: Failure. We did not find the tool significantly useful in practice for this project, though I am sure it would be extremely useful for studios with a dedicated QA team or a game available on more platforms. Automated packaging for all platforms overnight, ready to then test the next morning! </p>
            </div>
            <div class="card-footer">
              <a class="text-muted card-button" href=""> -------</a>
@@ -122,7 +128,7 @@
              <li><h3> How It Works:</h3></li>
              <li id="tool-text"> Same as above, I used the UAT to power this tool. This time I decided to decouple a little further and let the user specify the RunUAT filepath just in case we needed Windows builds in the future. You can find the RunUAT that works on your OS in your install folder [Epic Games/UE/Engine/Build/BatchFiles]. Again, same as above, I used the Message Log to find the line used to package the game and split that into the filepaths and commands. I also let the user specify which type of packaging they want: Development or Shipping. The key differences being in the Shipping builds you wont get access to Editor console commands and your won't be able to profile your game since UE will strip the game of your method names when packaging. Which is great since you can do any profiling work you need with Development builds and then not worry about someone decompiling your game easily with the Shipping build.</li>
              <br/><br/>
-             <li id="tool-text"> One important thing to note is that if you're an iOS developer, you have to set your development and shipping certificates. These are saved as pure strings and you can find them (once you've attached them to Unreal) within the Project Settings in UE. When making builds you have to set these certificates, whether for development or shipping for iOS and tvOS, manually. However, you can save these strings within your script and set them inside DefaultGame.ini. I actually didn't get to that point since we didn't end up using this tool all that much and I figured it out pretty much within the last couple days of working on the Dodo Peak that it made no sense to spend time setting that up. In any case, you can automate your iOS and tvOS (and I guess iPadOS now) builds like this as well. </li>
+             <li id="tool-text"> One important thing to note is that if you're an iOS developer, you have to set your development and shipping certificates. These are saved as pure strings and you can find them (once you've attached them to Unreal) within the Project Settings in UE. When making builds you have to set these certificates, whether for development or shipping for iOS and tvOS, manually. However, you can save these strings within your script and set them inside DefaultGame.ini. I actually didn't get to that point since we didn't end up using this tool all that much. In any case, you can automate your iOS and tvOS (and iPadOS now) builds like this as well. </li>
              <br/><br/>
              <li id="tool-text">Useful links:&nbsp <a href="https://docs.unrealengine.com/en-US/Programming/BuildTools/AutomationTool/Overview/index.html"> Official documentation </a> &nbsp &nbsp<a href="https://wiki.unrealengine.com/How_to_package_your_game_with_commands">Auto Packaging on Unreal Wiki</a> &nbsp &nbsp <a href=""</li>
            </ul>
@@ -133,16 +139,18 @@
 
       <div class="flex-container2" id="projects">
         <div class="card" style="max-width: 25%">
-          <img class="card-img-top img-fluid" src="../images/animviewer.png" alt="In engine model and animation viewer image">
+          <img class="card-img-top img-fluid" src="../images/animviewer.png" alt="in engine model and animation viewer image">
           <div class="card-block">
-            <h4 class="card-title">In Engine Model & Animation Viewer</h4>
-            <p class="card-text"> Problem: Playing a game of chess to view each animation is not efficient for iterative improvements.</p>
+            <h4 class="card-title">In-Engine model & animation viewer | Wizards Chess VR</h4>
+            <p class="card-text"> Opportunity: Playing a game of chess to view each animation is not efficient for iterative improvements.</p>
             <p class="card-text"> Solution: Made a Unity scene that let me look at models and animations quickly in the editor. Doubles as a bonus "level" in Wizards Chess VR.</p>
+            <p class="card-text"> Result: Dope. Hard to say how much time this saved me, but I couldn't have the animations work properly in game without it. Previewing animations in-engine is necessary, playing a game of chess every time I want to preview is not. </p>
           </div>
           <div class="card-footer">
-            <a class="text-muted card-button" href="https://gamejolt.com/games/WizardsChessVR/420660">View in the game</a>
+            <a class="card-button" href="https://gamejolt.com/games/WizardsChessVR/420660">View in the game</a>
           </div>
         </div>
+        <div>
 
            <ul class="flex-contrainer3 tool-description">
              <li><h3> How It Works:</h3></li>
@@ -153,14 +161,15 @@
              <li id="tool-text"> It is a bit less user-friendly than I think would be good for a production tool with multiple people, but since it was just me I didn't think spending time on creating a standalone tool would be much use.
              </li>
            </ul>
-
+        </div>
 
          <div class="card" style="max-width: 25%">
            <img class="card-img-top img-fluid" src="../images/mirrorbones.png" alt="mirror bones script image">
            <div class="card-block">
-             <h4 class="card-title">Rigging automation</h4>
-             <p class="card-text"> Problem: A significant amount of repetitive work involved with rigging and adjusting rigs exist because all my rigs are symmterical </p>
+             <h4 class="card-title">Rigging automation | Wizards Chess VR</h4>
+             <p class="card-text"> Opportunity: All my rigs are symmterical, so rigging both halves of any rig quickly became repetitive.</p>
              <p class="card-text"> Solution: Scripts to mirror position, vertex weights, and bone constraints from the left side to the right for symmetric models </p>
+             <p class="card-text"> Result: Dope. Halved the rigging process for both of my personal game projects so far, and I'm sure will be useful well into the future. </p>
            </div>
            <div class="card-footer">
              <a class="text-muted card-button" href="https://github.com/snaik27/BlenderScripts">View on Github</a>
@@ -172,7 +181,7 @@
            </li> <br/><br/>
            <li id="tool-text"> But what I wanted was to mirror all left facing bones to the right side while also mirroring bone weights and names with the click of a button.
            </li><br/><br/>
-           <li id="tool-text"> This does exactly that by grabbing all left bones (through naming scheme), mirroring each bone and it's weights and vertex group.
+           <li id="tool-text"> This does exactly that by grabbing all left bones (through naming scheme), mirroring each bone, their weights, and vertex groups.
            </li><br/><br/>
            <li id="tool-text"> Works without any issues on symmetrical rigs and even in some cases on asymmetrical rigs in which I needed many of the same bones but not all.
            </li>
