@@ -35,11 +35,13 @@ li {
 }
 
 h2,
-h3,
 h4,
 h5,
 h6 {
   margin: 10px;
+}
+h3{
+  margin: 0px;
 }
 
 /*Flex-container */
@@ -159,10 +161,7 @@ h6 {
 }
 
 /*Card Buttons */
-.card-title {
-  margin-bottom: 0.75rem;
-  margin-left: 0px;
-}
+
 .card-button{
   color: #B5B5B5;
   text-decoration-color: none;
@@ -247,11 +246,7 @@ h6 {
       margin: 0px auto 0px 0px;
       font-size: 0.5em;
     }
-  .card-title {
-    margin-bottom: 0.75rem;
-    margin-left: 0px;
-    font-size: 0.5em;
-  }
+
   .card-text{
     font-size: 0.5em;
   }
@@ -363,7 +358,7 @@ h6 {
   .card-title {
     margin-bottom: 0.75rem;
     margin-left: 0px;
-    font-size: 1em;
+    font-size: 1.1em;
   }
   .card-text{
     font-size: 1em;

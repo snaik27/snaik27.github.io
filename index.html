@@ -26,7 +26,10 @@
             <a class="flex-button" href="index.html"> &nbsp&nbsp Home &nbsp&nbsp </a>
           </li>
           <li>
-            <a class="flex-button" href="pages/tools.html"> &nbsp&nbsp Tools &nbsp&nbsp </a>
+            <a class="flex-button" href="pages/art.html"> &nbsp&nbsp&nbsp Art &nbsp&nbsp&nbsp</a>
+          </li>
+          <li>
+            <a class="flex-button" href="pages/projects.html"> &nbsp Projects &nbsp</a>
           </li>
           <li>
             <a class="flex-button" href="images/sidResume.pdf">Resume</a>
@@ -56,174 +59,245 @@
         </ul>
       </div>
 
+      <div class="flex-container">
+        <ul id="focus" style="font-size:2em">
+          <li>Tools & VFX </li>
+        </ul>
+      </div>
+
       <div>
         <hr> <!--easy-peez visual division-->
       </div>
 
 
       <!--Portfolio Reel-->
-      <div class="flex-container">
+<!--    <div class="flex-container">
         <h1 id="focus3"> Tech Art Reel </h1>
       </div>
       <div class="flex-container">
         <iframe class="video"  src="https://www.youtube.com/embed/zdw5qx9aXx0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
+-->
+<div class="flex-container">
+  <h1 id="focus3"> Tools breakdown </h1>
+</div>
 
-     <!-- All Tools. These should be github links with readmes.-->
-     <div class="flex-container">
-       <h1 id="focus3"> Tools </h1>
+<div class="flex-container2" id="projects">
+   <div class="card" style="max-width: 25%">
+     <img class="card-img-top img-fluid" src="images/fracturetool.png" alt="fracture tool image">
+     <div class="card-block">
+       <h4 class="card-title">Vert-Group based cell fracture | Wizards Chess VR </h4>
      </div>
-     <div class="flex-container2" id="projects">
-       <div class="card">
-         <img class="card-img-top img-fluid" src="images/fracturetool.png" alt="fracture tool image">
-         <div class="card-block">
-           <h4 class="card-title">Vert-Group based cell fracture | Wizards Chess VR </h4>
-           <p class="card-text"> Opportunity: Blender's "Cell Fracture" object fracture tool doesn't work well on abnormal meshes like the chess pieces.</p>
-           <p class="card-text"> Solution: Wrote scripts to break each model by its vertex groups, fill holes in the mesh, and then use Cell Fracture on the broken limbs.</p>
-           <p class="card-text"> Result: Wasn't perfect, but reduced manual work from about half a work day to break a character to about 1-2 hours per character. </p>
-         </div>
-         <div class="card-footer">
-           <a class="text-muted card-button" href="https://github.com/snaik27/BlenderScripts">View on Github</a>
-         </div>
-       </div>
-       <div class="card">
-         <img class="card-img-top img-fluid" src="images/autolight.png" alt="mirror bones script image">
-         <div class="card-block">
-           <h4 class="card-title">Auto lightmap baking tool | DodoPeak</h4>
-           <p class="card-text"> Opportunity: A huge amount of time would be spent manually baking each level of the game within Unreal Engine after minor level changes and when new levels are made. </p>
-           <p class="card-text"> Solution: I made this tool to have Unreal bake lighting for all levels at the end of each day so we could package and QA immediately the next day. </p>
-           <p class="card-text"> Result: Dope. The alternatives of baking 30-50 levels(at ~5-10 minutes per level) or baking only a few levels for testing is unfeasible and significantly less useful respectively. Faster iteration!</p>
-         </div>
-         <div class="card-footer">
-           <a class="text-muted card-button" href="pages/tools.html"> View writeup on my tools page</a>
-         </div>
-       </div>
-        <div class="card">
-          <img class="card-img-top img-fluid" src="images/autopackage.png" alt="fracture tool image">
-          <div class="card-block">
-            <h4 class="card-title">Auto game packaging tool | DodoPeak</h4>
-            <p class="card-text"> Opportunity: Same as the auto lightmass baking tool, a huge amount of time would be spent packaging the game for many devices for QA and testing. </p>
-            <p class="card-text"> Solution: I made this tool to let us package the game for different devices so we don't have to open Unreal and have one of us devoted to pressing the "package game" button over and over. </p>
-            <p class="card-text"> Result: Failure. We did not find the tool significantly useful in practice for this project, though I am sure it would be extremely useful for studios with a dedicated QA team or a game available on more platforms. Automated packaging for all platforms overnight, ready to then test the next morning! </p>
-          </div>
-          <div class="card-footer">
-            <a class="text-muted card-button" href="pages/tools.html"> View writeup on my tools page</a>
-          </div>
-        </div>
-      </div>
-      <div class="flex-container2" id="projects">
-         <div class="card">
-           <img class="card-img-top img-fluid" src="images/mirrorbones.png" alt="mirror bones script image">
-           <div class="card-block">
-             <h4 class="card-title">Rigging automation | Wizards Chess VR</h4>
-             <p class="card-text"> Opportunity: All my rigs are symmterical, so rigging both halves of any rig quickly became repetitive.</p>
-             <p class="card-text"> Solution: Scripts to mirror position, vertex weights, and bone constraints from the left side to the right for symmetric models </p>
-             <p class="card-text"> Result: Dope. Halved the rigging process for both of my personal game projects so far, and I'm sure will be useful well into the future. </p>
-           </div>
-           <div class="card-footer">
-             <a class="text-muted card-button" href="https://github.com/snaik27/BlenderScripts">View on Github</a>
-           </div>
-         </div>
-         <div class="card">
-           <img class="card-img-top img-fluid" src="images/animviewer.png" alt="in engine model and animation viewer image">
-           <div class="card-block">
-             <h4 class="card-title">In-Engine model & animation viewer | Wizards Chess VR</h4>
-             <p class="card-text"> Opportunity: Playing a game of chess to view each animation is not efficient for iterative improvements.</p>
-             <p class="card-text"> Solution: Made a Unity scene that let me look at models and animations quickly in the editor. Doubles as a bonus "level" in Wizards Chess VR.</p>
-             <p class="card-text"> Result: Dope. Hard to say how much time this saved me, but I couldn't have the animations work properly in game without it. Previewing animations in-engine is necessary, playing a game of chess every time I want to preview is not. </p>
-           </div>
-           <div class="card-footer">
-             <a class="card-button" href="https://gamejolt.com/games/WizardsChessVR/420660">View in the game</a>
-           </div>
-         </div>
+     <div class="card-footer">
+       <a class="text-muted card-button" href="https://github.com/snaik27/BlenderScripts">View on Github</a>
      </div>
+   </div>
+   <div>
+     <ul class="flex-contrainer3 tool-description">
+        <li><h3> How It Works:</h3></li><br/><br/>
+        <li id="tool-text"> <b>Opportunity</b>: Blender's "Cell Fracture" object fracture tool doesn't work well on abnormal meshes like the chess pieces but I needed it to work for my destruction effects.
+        </li><br/><br/>
+        <li id="tool-text"> <b>Solution</b>: There is an add-on (plugin for you maya users) called Cell Fracture in Blender. What this does is take in meshes, breaks some edges and then fills in holes in the new meshes. The issue with this add-on I had was that it does not work well at all with meshes that have long extrusions or odd loops like character meshes. I solved this by:
+        </li> <br/><br/>
+        <li id="tool-text"> 1. Creating a script that first breaks my character meshes by their respective vert-groups. This makes it so hands, feet, weapons and everything else is broken into its own mesh.
+        </li>    <br/>
+        <li id="tool-text"> 2. Fill the holes in these meshes.
+        </li>     <br/>
+        <li id="tool-text"> 3. Call cell fracture on those meshes.
+        </li> <br/><br/>
+        <li id="tool-text"> <b>Result</b>: Wasn't perfect, but reduced manual work from about half a work day to break a character to about 1-2 hours per character. This was a huge a time saver, but was also more of a work-around than a proper solution. Nowadays I would much rather use something like Houdini's destruction system for more realistic breaks.
+        </li>
+   </ul>
+ </div>
+</div>
 
+<div class="flex-container2" id="projects">
+  <div class="card" style="min-width:25%">
+    <img class="card-img-top img-fluid" src="images/autolight.png" alt="mirror bones script image">
+    <div class="card-block">
+      <h4 class="card-title">Auto lightmap baking tool | DodoPeak</h4>
+    </div>
+    <div class="card-footer">
+      <a class="text-muted card-button" href=""> -------</a>
+    </div>
+  </div>
+  <div>
+    <ul class="flex-contrainer3 tool-description">
 
+      <li><h3> How It Works:</h3>
+      </li><br/><br/>
 
+      <li id="tool-text"> <b>Opportunity</b>:&nbsp A huge amount of time would be spent manually baking each level of the game within Unreal Engine after minor level changes and when new levels are made.
+      </li><br/><br/>
 
+      <li id="tool-text"> <b>Solution</b>: &nbsp I made this tool to have Unreal bake lighting for all levels at the end of each day so we could package and QA immediately the next day.
 
+                          <br/>&nbsp<br/> Unreal Engine has a set of ".ini" files that let developers easily setup graphics and device settings. By default you'll see 3-4 files in the Config folder of your EU project,
+                                          one of which is DefaultGame.ini. This file contains all the maps you include in your game along with a ton of settings you can set manually within UE.
+                          <br/>&nbsp<br/>
+                          <br/>&nbsp<br/>What to do:
+                          <br/><br/> 1. Do this now: click-clack your way to your game's .uproject, then open the Output Log, and click the Build button above your viewport to bake your lightmap for any level.
+                          <br/><br/> 2. In the Output log you'll see a log that looks a hell of a lot like the commands in the links below. That line of code tells UE exactly how to bake your lightmaps do based on your
+                                            settings for that level.
+                          <br/><br/> 3. Run this line for every map in a python script with your editor closed.
+                          <br/>&nbsp<br/>
+                          <br/>&nbsp<br/> Things to note:
+                          <br/><br/> 1. Make sure you've got set Python 2.7x in your PATH. It lets you run Python from your console/terminal.
+                          <br/><br/> 2. On macs, we also need change the .py suffix on the filename to .command. This lets Macs use the file as a standalone program
+                          <br/><br/> 3. Make sure your file permissions are set to allow python to interact with the relevant filese
+        </li><br/><br/>
 
+        <li id="tool-text"> <b>Result:</b> &nbsp Sick. The alternatives of baking 30-50 levels(at ~5-10 minutes per level) or baking only a few levels for testing is unfeasible and significantly less useful respectively. Faster iteration!
+                                          Seriously, this couldn't be simpler and I'm less than scratching the surface of Unreal's automation setup with this writeup so please go check it out for yourself!
+                                          I wish we could have this in Unity too, I'll do another writeup if I ever need to do the same in Unity!
+        </li><br/><br/>
 
+        <li id="tool-text">Useful links:&nbsp <a href="https://docs.unrealengine.com/en-US/Programming/BuildTools/AutomationTool/Overview/index.html"> Official documentation </a>
+                          &nbsp &nbsp &nbsp &nbsp
+                          <a  class="text-muted" href="https://wiki.unrealengine.com/How_to_package_your_game_with_commands">UE Wiki</a> &nbsp
+        </li><br/><br/>
 
+        <li id="tool-text">Useful links:&nbsp<a href="https://unix.stackexchange.com/questions/29608/why-is-it-better-to-use-usr-bin-env-name-instead-of-path-to-name-as-my"> Link to warnings about that method --> &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp&nbsp &nbsp </a>
+                                            <a href="https://www.cyberciti.biz/tips/finding-bash-perl-python-portably-using-env.html">Linux/Mac setup </a> &nbsp &nbsp
 
+        </li>
 
-     <!-- All game projects. These should be links to the games themselves or eric's twitch -->
-     <div class="flex-container">
-       <h1 id="focus3"> Games & Experiences </h1>
+    </ul>
+  </div>
+</div>
+
+<div class="flex-container2" id="projects">
+   <div class="card" style="min-width: 25%">
+     <img class="card-img-top img-fluid" src="images/autopackage.png" alt="fracture tool image">
+     <div class="card-block">
+       <h4 class="card-title">Auto game packaging tool | DodoPeak</h4>
      </div>
-     <div class="flex-container2" id="projects">
-       <div class="card">
-         <img class="card-img-top img-fluid" src="images/megamanLegends.png" alt="Megaman Legends in Unity engine">
-         <div class="card-block">
-           <h4 class="card-title">Megaman Ancients</h4>
-           <p class="card-text"> Currently working on a fan game for Megaman Legends 3</p>
-           <p class="card-text"> Developing procedural animation system, expanding my shader knowledge, and creating a pipeline for major assets for good practice. </p>
-           <p class="card-text"> <b>Technologies</b><br /><i> Unity, Blender, C#,HLSL, Python</i></p>
-         </div>
-         <div class="card-footer">
-           <a class="card-button" href="https://twitter.com/sidwasnothere">Follow my progress on Twitter </a>
-         </div>
-       </div>
-       <div class="card">
-         <img class="card-img-top img-fluid" src="images/DodoPeak.png" alt="Dodo Peak image">
-         <div class="card-block">
-           <h4 class="card-title">Dodo Peak [Freelance]</h4>
-           <p class="card-text"> Arcade style game in which you, the mother Dodo, collect your lost baby dodo eggs. Find your babies while dodging enemies and obstacles throughout various worlds. </p>
-           <p class="card-text"> <b>Technologies</b><br /><i> Unreal, Houdini, Blender, Substance Designer, Python, GitKraken, Instruments (Mac)</i></p>
-         </div>
-         <div class="card-footer">
-           <a class="card-button" href="https://www.dodopeak.com/">View on DodoPeak website </a>
-         </div>
-       </div>
-        <div class="card">
-          <img class="card-img-top img-fluid" src="images/wcvr.png" alt="Wizards Chess image">
-          <div class="card-block">
-            <h4 class="card-title">Wizards Chess VR</h4>
-            <p class="card-text"> Solo fan game project, players play a game of wizards chess in the great hall of hogwarts. </p>
-            <p class="card-text"> <b>Technologies</b><br /><i> Unity, Blender, Substance Painter, C#, Python, SteamVR</i></p>
-          </div>
-          <div class="card-footer">
-            <a class="card-button" href="https://gamejolt.com/games/WizardsChessVR/420660">View on Gamejolt</a>
-          </div>
-        </div>
-      </div>
+     <div class="card-footer">
+       <a class="text-muted card-button" href=""> -------</a>
+     </div>
+   </div>
+   <div>
+     <ul class="flex-contrainer3 tool-description">
+       <li><h3> How It Works:</h3>
+       </li><br/><br/>
 
-      <div class="flex-container2" id="projects">
-        <div class="card"> <!--.card class modifications: background color:#2b2b2b, margin:20px added-->
-          <img class="card-img-top img-fluid" src="images/freelancework.png" alt="VR Knight avatar posing with skeleton avatar in game">
-          <div class="card-block">
-            <h4 class="card-title">Yarwad XR Talk/Game Show [Freelance]</h4>
-            <p class="card-text"> A talk show with a wave-shooter frame. Networked multiplayer to allow guests on the show. Automated half of- and provided documentation for new scene setup process. </p>
-            <p class="card-text"> <b>Technologies</b><br /><i> Unity, C#, SteamVR, Normcore</i></p>
-          </div>
-          <div class="card-footer"> <!--  .card-footer modifications: background-color: @2b2b2b, border-width: 2px 0 2px 0, border-color: #D47300, border-style:solid. Removed border-top-->
-            <a class="text-muted card-button"  href="https://www.twitch.tv/yarwad/videos">Link to Yarward's Twitch</a> <!--text-muted removed from bootstrap bc I had it on my style sheet anyway-->
-          </div>
-        </div>
-        <!--
-        <div class="card">
-          <img class="card-img-top img-fluid" src="images/prisonbreak.png" alt="Prison Break VR image">
-          <div class="card-block">
-            <h4 class="card-title">Prison Break VR</h4>
-            <p class="card-text"> UnityNYC XR game jam project. In this prison break experience, you must retrieve a package from the warden's office without getting caught but things go wrong fast. </p>
-            <p class="card-text"> <b>Technologies</b><br /><i> Unity, Blender, C#, DepthKit, SteamVR</i></p>
-          </div>
-          <div class="card-footer">
-            <a class="text-muted card-button" href="https://sidwasnothere.itch.io/preposterous-prison-break">View on Itch.io</a>
-          </div>
-        </div> -->
-      </div>
+       <li id="tool-text"> <b>Opportunity</b>:&nbsp Same as the auto lightmap baking tool, a huge amount of time would be spent packaging the game for many devices for QA and testing.
+       </li><br/><br/>
+
+       <li id="tool-text"> <b>Solution</b>: &nbsp I made this tool to let us package the game for different devices so we don't have to open Unreal and have one of us devoted to pressing the "package game" button over and over.
+                          <br/>&nbsp<br/>
+
+                          <br/>&nbsp<br/>What to do:
+                          <br/><br/> 1. Same as above, I used the UAT to power this tool but this time I decided to decouple a little further and let the user specify the RunUAT filepath just in case we needed Windows builds in the future. You can find the RunUAT that works on your OS in your install folder [Epic Games/UE/Engine/Build/BatchFiles].
+                          <br/><br/> 2. Just like above, use the Message Log to find the line used to package the game and split that into the filepaths and commands. I also let the user specify which type of packaging they want: Development or Shipping. The key differences being in the Shipping builds you wont get access to Editor console commands and your won't be able to profile your game since UE will strip the game of your method names when packaging. Which is great since you can do any profiling work you need with Development builds and then not worry about someone decompiling your game easily with the Shipping build.
+
+                          <br/>&nbsp<br/>
+                          <br/>&nbsp<br/> Things to note:
+                          <br/><br/> 1. One important thing to note is that if you're an iOS developer, you have to set your development and shipping certificates. These are saved as pure strings and you can find them (once you've attached them to Unreal) within the Project Settings in UE.
+                          <br/><br/> 2. When making builds you have to set these certificates, whether for development or shipping for iOS and tvOS, manually. However, I believe you can save these strings within your script and set them inside DefaultGame.ini. I actually didn't get to that point since we didn't end up using this tool all that much. In any case, you can automate your iOS and tvOS (and iPadOS now) builds like this as well. </li>
+        </li><br/><br/>
+
+        <li id="tool-text"> <b>Result:</b> &nbsp Mixed. We did not find the tool significantly useful in practice for this project, though I am sure it would be extremely useful for studios with a dedicated QA team or a game available on more platforms. Automated packaging for all platforms overnight, ready to then test the next morning!
+        </li><br/><br/>
+
+        <li id="tool-text">Useful links:&nbspUseful links:&nbsp <a href="https://docs.unrealengine.com/en-US/Programming/BuildTools/AutomationTool/Overview/index.html"> Official documentation </a> &nbsp &nbsp<a href="https://wiki.unrealengine.com/How_to_package_your_game_with_commands">Auto Packaging on Unreal Wiki</a> &nbsp &nbsp <a href=""></a>
+        </li>
+     </ul>
+     </div>
+ </div>
 
 
 
+<div class="flex-container2" id="projects">
+  <div class="card" style="max-width: 25%">
+    <img class="card-img-top img-fluid" src="images/animviewer.png" alt="in engine model and animation viewer image">
+    <div class="card-block">
+      <h4 class="card-title">In-Engine model & animation viewer | Wizards Chess VR</h4>
+    </div>
+    <div class="card-footer">
+      <a class="card-button" href="https://gamejolt.com/games/WizardsChessVR/420660">View in the game</a>
+    </div>
+  </div>
+  <div>
+
+     <ul class="flex-contrainer3 tool-description">
+       <li><h3> How It Works:</h3>
+       </li><br/><br/>
+
+       <li id="tool-text"> <b>Opportunity</b>:
+       </li>
+
+       <li id="tool-text"> Playing a game of chess to view each animation is not efficient for iterative improvements.
+       </li><br/><br/>
+
+       <li id="tool-text"> <b>Solution</b>:
+       </li>
+
+       <li id="tool-text"> I made a Unity scene that let me look at models and animations quickly in the editor. Doubles as a bonus "level" in Wizards Chess VR.
+       <br/>&nbsp<br/>For this, I used Unity's Editor API to create some simple buttons in the inspector to instantiate each character and play back inidividual animations.
+        </li><br/><br/>
+
+       <li id="tool-text"> <b>Result:</b>
+       </li>
+
+       <li id="tool-text"><br/>Dope. Hard to say how much time this saved me, but I couldn't have the animations work properly in game without it. Previewing animations in-engine is necessary, playing a game of chess every time I want to preview is not.
+       </li><br/><br/>
+
+       <li id="tool-text"> It is a bit less user-friendly than I think would be good for a production tool with multiple people, but since it was just me I didn't think spending time on creating a standalone tool would be much use.
+       </li>
+     </ul>
+  </div>
+
+
+
+   <div class="card" style="max-width: 25%">
+     <img class="card-img-top img-fluid" src="images/mirrorbones.png" alt="mirror bones script image">
+     <div class="card-block">
+       <h4 class="card-title">Rigging automation | Wizards Chess VR</h4>
+     </div>
+     <div class="card-footer">
+       <a class="text-muted card-button" href="https://github.com/snaik27/BlenderScripts">View on Github</a>
+     </div>
+   </div>
+   <ul class="flex-contrainer3 tool-description">
+     <li><h3> How It Works:</h3>
+     </li><br/><br/>
+
+     <li id="tool-text"> <b>Opportunity</b>:
+     </li>
+
+     <li id="tool-text">  All my rigs are symmterical, so rigging both halves of any rig quickly became repetitive.
+     </li><br/><br/>
+
+     <li id="tool-text"> <b>Solution</b>:
+     </li>
+
+     <li id="tool-text"> Scripts to mirror position, vertex weights, and bone constraints from the left side to the right for symmetric models.
+     </li><br/><br/>
+
+     <li id="tool-text"> Blender provides tools for things like mirroring bones over an axis and even renaming them for you. But what I wanted was to mirror all left facing bones to the right side while also mirroring bone weights and names with the click of a button.
+     </li><br/><br/>
+     <li id="tool-text"> This does exactly that by grabbing all left bones (through naming scheme), mirroring each bone, their weights, and vertex groups.
+     </li><br/><br/>
+     <li id="tool-text"> Works without any issues on symmetrical rigs and even in some cases on asymmetrical rigs in which I needed many of the same bones but not all.
+     </li><br/><br/>
+
+    <li id="tool-text"> <b>Result:</b>
+    </li>
+
+    <li id="tool-text"><br/> Awesome. Halved the rigging process for both of my personal game projects so far, and I'm sure will be useful well into the future.
+    </li>
+   </ul>
+</div>
 
 
 
 
 
 
-
-
+<div>
+  <hr> <!--easy-peez visual division-->
+</div>
      <!-- All Shaders/VFX. These should be youtube links probably with sources wherever needed -->
      <div class="flex-container">
        <h1 id="focus3"> VFX </h1>
@@ -251,63 +325,22 @@
          </div>
        </div>
 
-     <!-- All else (environment art/models/rigs/animations/etc. These should be artstation links) -->
-     <div class="flex-container">
-       <h1 id="focus3"> Other Art </h1>
-     </div>
-     <div class="flex-container2" id="projects">
-       <div class="card"> <!--.card class modifications: background color:#2b2b2b, margin:20px added-->
-         <img class="card-img-top img-fluid" src="images/chesspieces.png" alt="great sky image">
-         <div class="card-block">
-           <h4 class="card-title"> Characters & Animations: Chess pieces</h4>
-           <p class="card-text"> Models, rigs, animations for Wizards Chess VR.</p>
-           <p class="card-text"> Fun fact: Only 3 animations are shown in the movie: Queen attack, Pawn attack, and King's checkmate animation! I made the rest of the animations to fit with the look of those 3. </p>
-         </div>
-         <div class="card-footer"> <!--  .card-footer modifications: background-color: @2b2b2b, border-width: 2px 0 2px 0, border-color: #D47300, border-style:solid. Removed border-top-->
-           <a class="text-muted card-button" href="https://www.artstation.com/sidwasnothere/albums/1581042">View on Artstation</a>
-         </div>
-       </div>
-       <div class="card"> <!--.card class modifications: background color:#2b2b2b, margin:20px added-->
-         <img class="card-img-top img-fluid" src="images/dodoOutfits.png" alt="dodo outfits image">
-         <div class="card-block">
-           <h4 class="card-title"> Models: Dodo Outfits </h4>
-           <p class="card-text"> Models for different Dodo outfits in Dodo Peak.</p>
-           <p class="card-text"> Fun fact: Dodos go faster when they wear different clothes! </p>
-         </div>
-         <div class="card-footer"> <!--  .card-footer modifications: background-color: @2b2b2b, border-width: 2px 0 2px 0, border-color: #D47300, border-style:solid. Removed border-top-->
-           <a class="text-muted card-button" href="https://sidwasnothere.artstation.com/albums/1901482">View on Artstation</a>
-         </div>
-       </div>
-       <div class="card">
-         <img class="card-img-top img-fluid" src="images/megaman.png  " alt="megaman trigger render">
-         <div class="card-block">
-           <h4 class="card-title"> Characters & Animations: Megaman Trigger </h4>
-           <p class="card-text"> Model, rig, animations for my Megaman Legends Reimaginated fan game. </p>
-           <p class="card-text"> Semi-Fun fact: It is almost impossible to find the original Megaman Legends Artbooks!  </p>
-         </div>
-         <div class="card-footer">
-           <a class="card-button" href="https://sidwasnothere.artstation.com/albums/1768492">View on Artstation</a>
-         </div>
-       </div>
-     </div>
 
-      <div class="flex-container2" id="projects">
-        <div class="card">
-          <img class="card-img-top img-fluid" src="images/wcvr.png" alt="great hall image">
-          <div class="card-block">
-            <h4 class="card-title"> Environment: Great Hall of Hogwarts </h4>
-            <p class="card-text"> Environment I made for Wizards Chess VR. </p>
-            <p class="card-text"> Fun fact: The great hall you see in the HP movies 1-6 is changed in movies 7 & 8. The hall is almost twice as tall, everything above the height of the braziers is elongated!  </p>
-          </div>
-          <div class="card-footer">
-            <a class="card-button" href="https://www.artstation.com/artwork/qAY0aR">View on Artstation</a>
-          </div>
-        </div>
-      </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
      <!--All olddd projects. Each project uses modified bootstrap cards-->
-     <div class="flex-container">
+<!--   <div class="flex-container">
        <h1 id="focus3"> Old work</h1>
      </div>
      <div class="flex-container2" id="projects">
@@ -333,15 +366,15 @@
            <a class="card-button" href="https://github.com/snaik27/ssbbot">View on Github</a>
          </div>
        </div>
-       <div class="card"> <!--.card class modifications: background color:#2b2b2b, margin:20px added-->
+       <div class="card"> <!--.card class modifications: background color:#2b2b2b, margin:20px added
          <img class="card-img-top img-fluid" src="images/room.png" alt="Room render">
          <div class="card-block">
            <h4 class="card-title">Interior Modeling</h4>
            <p class="card-text"> A 3D model of my room made with Blender </p>
            <p class="card-text"> <b>Technologies</b><br /><i> Blender, Gimp</i></p>
          </div>
-         <div class="card-footer"> <!--  .card-footer modifications: background-color: @2b2b2b, border-width: 2px 0 2px 0, border-color: #D47300, border-style:solid. Removed border-top-->
-           <a class="text-muted card-button"  href="https://www.artstation.com/artwork/Z11eG">View on Artstation</a> <!--text-muted removed from bootstrap bc I had it on my style sheet anyway-->
+         <div class="card-footer"> <!--  .card-footer modifications: background-color: @2b2b2b, border-width: 2px 0 2px 0, border-color: #D47300, border-style:solid. Removed border-top-
+           <a class="text-muted card-button"  href="https://www.artstation.com/artwork/Z11eG">View on Artstation</a> <!--text-muted removed from bootstrap bc I had it on my style sheet anyway
          </div>
        </div>
      </div>
@@ -358,7 +391,7 @@
          </div>
        </div>
      </div>
-
+-->
      <div class="flex-container">
        <hr>
      </div>
@@ -382,7 +415,7 @@
         </li>
       </ul>
     </div>
-    <div class="flex-container footer">
+    <div class="flex-container footer" style="color:white">
       <p> Have a good day! </p>
     </div>
 
