@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sid Naik</title>
+
+    <link href="../../css/bootstrap_mod.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../../css/blogstyle.css" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <!--Top 'navbar' + resume.pdf -->
+      <div class="flex-container">
+        <h1 id="title-text">Sid Naik</h1>
+        <ul class="navbutts">
+          <li>
+            <a class="flex-button" href="../../index.html">&nbsp&nbsp Tools &nbsp&nbsp </a>
+          </li>
+          <li>
+            <a class="flex-button" href="../vfx.html"> &nbsp&nbsp&nbsp VFX &nbsp&nbsp&nbsp</a>
+          </li>
+          <li>
+            <a class="flex-button" href="../art.html"> &nbsp&nbsp 3D Art &nbsp&nbsp</a>
+          </li>
+          <li>
+            <a class="flex-button" href="../projects.html"> &nbsp Projects &nbsp</a>
+          </li>
+          <li>
+            <a class="flex-button" href="../posts.html"> &nbsp Blog &nbsp</a>
+          </li>
+          <li>
+            <a class="flex-button" href="../../images/sidResume.pdf">Resume</a>
+          </li>
+          <li>
+            <a class="flex-button" href="#contacts">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex-container">
+        <ul id="focus">
+          <li>Tech Art</li>
+          <li>&nbsp|&nbsp</li>
+          <li>Protoyping, Tools, Optimization</li>
+          <li>&nbsp|&nbsp</li>
+          <li id="focus2">  and everything else about games. </li>
+        </ul>
+      </div>
+
+      <div class="flex-container">
+        <ul id="focus" style="font-size:2em">
+          <li> Building Blender as a Python Module: Windows Guide</li>
+        </ul>
+      </div>
+
+
+      <div>
+        <hr> <!--easy-peez visual division-->
+      </div>
+
+
+      <div>
+        <ul class="flex-contrainer3 tool-description">
+           <li><h3> Steps </h3></li><br/><br/>
+           <li id="tool-text"> <b>Step 1</b>:&nbsp <a href="https://wiki.blender.org/wiki/Building_Blender/Windows" alt="Building Blender from Source"> Link to steps to build Blender from Source</a>
+           </li> <br/><br/>
+           <li id="tool-text"> <b>Step 2</b>:&nbsp Use your mouse to open up CmakeLists.txt found at ..\blender-git\blender and Ctrl+F to find and set 3 options:
+           </li> <br/><br/>
+           <li id="tool-text"> WITH_PYTHON_INSTALL=OFF,&nbsp WITH_AUDASPACE=OFF, &nbsp WITH_PYTHON_MODULE=ON
+           </li> <br/><br/>
+           <li id="tool-text"> <b>Step 3</b>: Open cmd.exe and cd over to ..\blender-git\blender. Then run "make bpy". The build will be inside ..\blender-git
+           </li><br/><br/>
+           <li id="tool-text"> <b>Step 4</b>: Now, cd over to ..\blender-git\*long_build_folder_name*\bin\Release and then run the following commands:
+           </li><br/><br/>
+           <li id="tool-text"> > copy bpy.pyd C:\Python37\Lib\site-packages\
+           </li><br/>
+           <li id="tool-text"> > copy *.dll C:\Python37\Lib\site-packages\
+           </li><br/>
+           <li id="tool-text"> > del C:\Python37\Lib\site-packages\python37.dll
+           </li><br/>
+           <li id="tool-text"> > xcopy /E bin\2.81 C:\Python37\
+           </li><br/><br/>
+      </ul>
+
+      <br/><br/>
+
+      <div>
+        <ul class="flex-contrainer3 tool-description">
+           <li><h3> Gotchas </h3></li><br/><br/>
+           <li id="tool-text"> <b>1&nbsp</b> You cannot use Visual Studio Community for this, <b>&nbsponly&nbsp</b> VS Code
+           </li> <br/><br/>
+           <li id="tool-text"> <b>2&nbsp</b> Python version for Blender2.8+ is 3.7 and is assumed here to be a global install
+           </li> <br/><br/>
+      </ul>
+
+
+
+      <div>
+        <hr> <!--easy-peez visual division-->
+      </div>
+
+
+
+        <!--ways to contact me-->
+      <div class="flex-container">
+        <ul class="navbutts" id="contacts">
+          <li>
+            <a class="fa fa-linkedin" href="http://www.linkedin.com/in/sidharthrnaik" alt="Linkedin link"></a>
+          </li>
+          <li>
+            <a class="fa fa-github" href="https://github.com/snaik27" alt="Github link"></a>
+          </li>
+          <li>
+            <a class="fa fa-twitter" href="https://twitter.com/sidwasnothere" alt="Github link"></a>
+          </li>
+          <li>
+            <a class="fa fa-youtube-play" href="https://www.youtube.com/channel/UCiw570OO12ZBkawxVuMQDtw/videos?view_as=subscriber" alt="Youtube link"></a>
+          </li>
+          <li>
+            <a class="fa fa-artstation" href="https://sidwasnothere.artstation.com/">
+                <img  class="fa fa-artstation" src="../../images/artstation.png" alt="Artstation link">
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex-container footer" style="color:white">
+        <p> Have a good day! </p>
+      </div>
+
+    </div>
+
+
+  </body>
+</html>
