@@ -12,7 +12,7 @@ body {/*targets the whole html body*/
 hr {
   border: none;
   height: 3px;
-  width: 80%;
+  width: 90%;
   background-color: #696969;
   margin:auto;
 }
@@ -141,7 +141,7 @@ h3{
   border-radius: 0.25rem;
 }
 .navbutts{
-  padding:2px;
+  padding: auto;
   margin:auto;
 }
 
@@ -314,8 +314,8 @@ h3{
     color: #FFADAD;
     font-weight: 400;
     font-size: 1em;
-    padding: auto;
-    margin:auto 0px auto 0px;
+    padding: 0;
+    margin:auto;
   }
   #focus4{
     padding: 0 0 0 0;
@@ -343,7 +343,7 @@ h3{
 @media (min-width: 850px){
   hr {
     border: none;
-    width: 80%;
+    width: 90%;
     /*background-color: #D47300;*/
     background-color: #696969;
     margin: 50px auto 50px auto;
@@ -371,7 +371,7 @@ h3{
     font-size: 1.1em;
   }
   .card-text{
-    font-size: 1em;
+    font-size: 0.75em;
   }
   .flex-button{
     background-color: #2B2B2B;
