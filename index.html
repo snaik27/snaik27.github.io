@@ -20,23 +20,17 @@
       <!--Top 'navbar' + resume.pdf -->
       <div class="flex-container">
         <h1 id="title-text">Sid Naik</h1>
-        <ul class="navbutts" style="">
+        <ul class="navbutts" >
           <li>
-            <a class="flex-button" href="index.html"> &nbsp&nbsp Tools &nbsp&nbsp </a>
+            <a class="flex-button" href="index.html"> &nbsp&nbsp Tech &nbsp&nbsp </a>
           </li>
           <li>
-            <a class="flex-button" href="pages/vfx.html"> &nbsp&nbsp&nbsp VFX &nbsp&nbsp&nbsp</a>
-          </li>
-          <li>
-            <a class="flex-button" href="pages/art.html"> &nbsp&nbsp 3D Art &nbsp&nbsp</a>
+            <a class="flex-button" href="pages/art.html"> &nbsp&nbsp&nbsp Art &nbsp&nbsp&nbsp</a>
           </li>
         </ul>
         <ul class="navbutts">
           <li>
             <a class="flex-button" href="pages/projects.html"> &nbsp Projects &nbsp</a>
-          </li>
-          <li>
-            <a class="flex-button" href="pages/posts.html"> &nbsp Blog &nbsp</a>
           </li>
           <li>
             <a class="flex-button" href="images/sidResume.pdf">Resume</a>
@@ -84,36 +78,75 @@
       </div>
 -->
 <div class="flex-container2" id="projects">
-   <div class="card">
-     <img class="card-img-top img-fluid" src="images/fracturetool.png" alt="fracture tool image">
-     <div class="card-block">
-       <h4 class="card-title">Vert-Group based cell fracture | Wizards Chess VR </h4>
-       <ul class="card-text" style="padding:0">
-          <li><h3> How It Works:</h3></li><br/><br/>
-          <li id="tool-text"> <b>Opportunity</b>:
-          </li>
-          <li id="tool-text"> Blender's "Cell Fracture" object fracture tool doesn't work well on abnormal meshes like the chess pieces but I needed it to work for my destruction effects.
-          </li><br/><br/>
-          <li id="tool-text"> <b>Solution</b>:
-          </li>
-          <li id="tool-text"> The issue with this add-on I had was that it does not work with meshes that have long extrusions or odd loops like character meshes. I solved this by:
-          </li> <br/><br/>
-          <li id="tool-text"> 1. Creating a script that first breaks my character meshes by their respective vert-groups. This makes it so hands, feet, weapons and everything else is broken into its own mesh.
-          </li>    <br/>
-          <li id="tool-text"> 2. Fill the holes in these meshes.
-          </li>     <br/>
-          <li id="tool-text"> 3. Call cell fracture on those meshes.
-          </li> <br/><br/>
-          <li id="tool-text"> <b>Result</b>:
-          </li>
-          <li id="tool-text"> Sweet! Reduced manual work from about half a work day to break a character to about 1-2 hours per character. This was a huge a time saver, but was also more of a work-around than a proper solution. Nowadays I would much rather use something like Houdini's destruction system for more realistic breaks.
-          </li>
-     </ul>
-     </div>
-     <div class="card-footer">
-       <a class="text-muted card-button" href="https://github.com/snaik27/BlenderScripts">View on Github</a>
-     </div>
- </div>
+  <div class="card">
+    <img class="card-img-top img-fluid" src="images/subcity.png" alt="Elsium SubCity overlook">
+    <div class="card-block">
+      <h4 class="card-title">Art directable, procedural city | Megaman Ancients </h4>
+      <ul class="card-text" style="padding:0">
+        <li><h3> How It Works:</h3>
+        </li><br/><br/>
+
+        <li id="tool-text"> <b>Opportunity</b>:
+        </li>
+
+        <li id="tool-text"> I want to make a city, but not by hand.
+        </li><br/><br/>
+
+        <li id="tool-text"> <b>Solution</b>:
+        </li>
+
+        <li id="tool-text"> I made an art-directable procedural city using Houdini and bring that into Unity with an HDA.
+        <br/>&nbsp<br/> Boring stuff (setting objects to static, object placement, collision, etc) are handled by the HDA, leaving me free to safely change primary, secondary, and tertiary detail as I carve out the city over time.
+         </li><br/><br/>
+
+        <li id="tool-text"> <b>Result:</b>
+        </li>
+
+        <li id="tool-text"><br/> Beyond what I thought was possible. This is my first "real" houdini project so while I had an idea of what I could do, I didn't think it would let me feel like I'm carving out a city *non-destructively* instead of building it brick-by-brick. 10/10, will continue down this road for a while.
+        </li><br/><br/>
+
+        <li id="tool-text"> Nowhere near done exploring this so it'll be done in another month or two with a few fun upgrades ideally.
+        </li>
+      </ul>
+    </div>
+    <div class="card-footer">
+      <a class="card-button" href="https://gamejolt.com/games/WizardsChessVR/420660">View in the game</a>
+    </div>
+  </div>
+
+  <div class="card">
+    <img class="card-img-top img-fluid" src="images/autopackage.png" alt="fracture tool image">
+    <div class="card-block">
+      <h4 class="card-title">Auto game packaging tool | DodoPeak</h4>
+      <ul class="card-text" style="padding:0">
+        <li><h3> How It Works:</h3>
+        </li><br/><br/>
+        <li id="tool-text"> <b>Opportunity</b>:
+        </li>
+
+        <li id="tool-text"> Too much time would be spent packaging the game for many devices for QA and testing.
+        </li><br/><br/>
+
+        <li id="tool-text"> <b>Solution</b>:
+        </li>
+        <li id="tool-text"> I made this tool to let us package the game for different devices so we don't have to open Unreal and have one of us devoted to pressing the "package game" button over and over.
+         </li><br/><br/>
+
+         <li id="tool-text"> <b>Result</b>:
+         </li>
+         <li id="tool-text"> Mixed. We did not find the tool significantly useful in practice for this project, though I am sure it would be extremely useful for studios with a dedicated QA team or a game available on more platforms. Automated packaging for all platforms overnight, ready to then test the next morning!
+         </li><br/><br/>
+
+         <li id="tool-text">Useful links:&nbspUseful links:&nbsp <a href="https://docs.unrealengine.com/en-US/Programming/BuildTools/AutomationTool/Overview/index.html"> Official documentation </a> &nbsp &nbsp<a href="https://wiki.unrealengine.com/How_to_package_your_game_with_commands">Auto Packaging on Unreal Wiki</a> &nbsp &nbsp <a href=""></a>
+         </li>
+      </ul>
+    </div>
+    <div class="card-footer">
+      <a class="text-muted card-button" > -------</a>
+    </div>
+  </div>
+
+
   <div class="card">
     <img class="card-img-top img-fluid" src="images/autolight.png" alt="mirror bones script image">
     <div class="card-block">
@@ -140,7 +173,7 @@
           <li id="tool-text"> <b>Result</b>:
           </li>
           <li id="tool-text"> Awesome! The alternatives of baking 30-50 levels(at ~5-10 minutes per level) or baking only a few levels for testing is unfeasible and significantly less useful respectively. Faster iteration!
-                                            Seriously, this couldn't be simpler and I'm less than scratching the surface of Unreal's automation setup with this writeup so please go check it out for yourself!
+                                    <br/>&nbsp<br/>             Seriously, this couldn't be simpler and I'm less than scratching the surface of Unreal's automation setup with this stuff so please go check it out for yourself!
                                             I wish we could have this in Unity too, I'll do another writeup if I ever need to do the same in Unity!
           </li><br/><br/>
 
@@ -157,11 +190,47 @@
       </ul>
     </div>
     <div class="card-footer">
-      <a class="text-muted card-button" href=""> -------</a>
+      <a class="text-muted card-button" > -------</a>
     </div>
   </div>
+ </div>
 
 
+
+<div class="flex-container2" id="projects">
+
+
+
+     <div class="card">
+       <img class="card-img-top img-fluid" src="images/fracturetool.png" alt="fracture tool image">
+       <div class="card-block">
+         <h4 class="card-title">Vert-Group based cell fracture | Wizards Chess VR </h4>
+         <ul class="card-text" style="padding:0">
+            <li><h3> How It Works:</h3></li><br/><br/>
+            <li id="tool-text"> <b>Opportunity</b>:
+            </li>
+            <li id="tool-text"> Blender's "Cell Fracture" object fracture tool doesn't work well on non-convex meshes like the chess pieces but I needed it to work for my destruction effects.
+            </li><br/><br/>
+            <li id="tool-text"> <b>Solution</b>:
+            </li>
+            <li id="tool-text"> The issue with this add-on I had was that it does not work with meshes that have long extrusions or odd loops like character meshes. I solved this by:
+            </li> <br/><br/>
+            <li id="tool-text"> 1. Creating a script that first breaks my character meshes by their respective vert-groups. This makes it so hands, feet, weapons and everything else is broken into its own mesh.
+            </li>    <br/>
+            <li id="tool-text"> 2. Fill the holes in these meshes.
+            </li>     <br/>
+            <li id="tool-text"> 3. Call cell fracture on those meshes.
+            </li> <br/><br/>
+            <li id="tool-text"> <b>Result</b>:
+            </li>
+            <li id="tool-text"> Sweet! Reduced manual work from about half a work day to break a character to about 1-2 hours per character. This was a huge a time saver, but was also more of a work-around than a proper solution. Nowadays I would much rather use something like Houdini's destruction system for more realistic breaks.
+            </li>
+       </ul>
+       </div>
+       <div class="card-footer">
+         <a class="text-muted card-button" href="https://github.com/snaik27/BlenderScripts">View on Github</a>
+       </div>
+   </div>
 
 
      <div class="card">
@@ -202,86 +271,6 @@
          <a class="text-muted card-button" href="https://github.com/snaik27/BlenderScripts">View on Github</a>
        </div>
      </div>
-
-
-
- </div>
-
-
-
-<div class="flex-container2" id="projects">
-  <div class="card">
-    <img class="card-img-top img-fluid" src="images/animviewer.png" alt="in engine model and animation viewer image">
-    <div class="card-block">
-      <h4 class="card-title">In-Engine model & animation viewer | Wizards Chess VR</h4>
-      <ul class="card-text" style="padding:0">
-        <li><h3> How It Works:</h3>
-        </li><br/><br/>
-
-        <li id="tool-text"> <b>Opportunity</b>:
-        </li>
-
-        <li id="tool-text"> Playing a game of chess to view each animation is not efficient for iterative improvements.
-        </li><br/><br/>
-
-        <li id="tool-text"> <b>Solution</b>:
-        </li>
-
-        <li id="tool-text"> I made a Unity scene that let me look at models and animations quickly in the editor. Doubles as a bonus "level" in Wizards Chess VR.
-        <br/>&nbsp<br/>For this, I used Unity's Editor API to create some simple buttons in the inspector to instantiate each character and play back inidividual animations.
-         </li><br/><br/>
-
-        <li id="tool-text"> <b>Result:</b>
-        </li>
-
-        <li id="tool-text"><br/>Dope! Hard to say how much time this saved me, but I couldn't have the animations work properly in game without it. Previewing animations in-engine is necessary, playing a game of chess every time I want to preview is not.
-        </li><br/><br/>
-
-        <li id="tool-text"> It is a bit less user-friendly than I think would be good for a production tool with multiple people, but since it was just me I didn't think spending time on creating a standalone tool would be much use.
-        </li>
-      </ul>
-    </div>
-    <div class="card-footer">
-      <a class="card-button" href="https://gamejolt.com/games/WizardsChessVR/420660">View in the game</a>
-    </div>
-  </div>
-
-
-
-
-
-     <div class="card">
-       <img class="card-img-top img-fluid" src="images/autopackage.png" alt="fracture tool image">
-       <div class="card-block">
-         <h4 class="card-title">Auto game packaging tool | DodoPeak</h4>
-         <ul class="card-text" style="padding:0">
-           <li><h3> How It Works:</h3>
-           </li><br/><br/>
-           <li id="tool-text"> <b>Opportunity</b>:
-           </li>
-
-           <li id="tool-text"> Too much time would be spent packaging the game for many devices for QA and testing.
-           </li><br/><br/>
-
-           <li id="tool-text"> <b>Solution</b>:
-           </li>
-           <li id="tool-text"> I made this tool to let us package the game for different devices so we don't have to open Unreal and have one of us devoted to pressing the "package game" button over and over.
-            </li><br/><br/>
-
-            <li id="tool-text"> <b>Result</b>:
-            </li>
-            <li id="tool-text"> Mixed. We did not find the tool significantly useful in practice for this project, though I am sure it would be extremely useful for studios with a dedicated QA team or a game available on more platforms. Automated packaging for all platforms overnight, ready to then test the next morning!
-            </li><br/><br/>
-
-            <li id="tool-text">Useful links:&nbspUseful links:&nbsp <a href="https://docs.unrealengine.com/en-US/Programming/BuildTools/AutomationTool/Overview/index.html"> Official documentation </a> &nbsp &nbsp<a href="https://wiki.unrealengine.com/How_to_package_your_game_with_commands">Auto Packaging on Unreal Wiki</a> &nbsp &nbsp <a href=""></a>
-            </li>
-         </ul>
-       </div>
-       <div class="card-footer">
-         <a class="text-muted card-button" href=""> -------</a>
-       </div>
-     </div>
-
 
 </div>
 

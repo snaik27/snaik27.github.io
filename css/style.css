@@ -3,10 +3,10 @@ body {/*targets the whole html body*/
   font-family: 'Lato', sans-serif;
   color: #F2F2F2; /*text color. basic color scheme at https://color.adobe.com/Phantom-Compass-color-theme-10292594/ */
   background: #F2F2F2; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(rgba(38,38,38,15) 20%, rgba(20,107,115,45) 80%, rgba(38,38,38,15) 100%);; /*Safari 5.1-6 and Chrome*/
-  background: -o-linear-gradient(rgba(38,38,38,15) 20%, rgba(20,107,115,45) 80%, rgba(38,38,38,15) 100%);; /*Opera 11.1-12*/
-  background: -moz-linear-gradient(rgba(38,38,38,15) 20%, rgba(20,107,115,45) 80%, rgba(38,38,38,15) 100%);; /*Fx 3.6-15*/
-  background: linear-gradient(rgba(38,38,38,15) 20%, rgba(20,107,115,45) 80%, rgba(38,38,38,15) 100%); /*Standard*/
+  background: -webkit-linear-gradient(rgba(38,38,38,15) 20%, rgba(38,38,38,15) 100%);; /*Safari 5.1-6 and Chrome*/
+  background: -o-linear-gradient(rgba(38,38,38,15) 20%, rgba(38,38,38,15) 100%);; /*Opera 11.1-12*/
+  background: -moz-linear-gradient(rgba(38,38,38,15) 20%, rgba(38,38,38,15) 100%);; /*Fx 3.6-15*/
+  background: linear-gradient(rgba(43,43,43,17) 0%, rgba(43,43,43,17) 92%, rgba(25,27,84,33) 94%, rgba(33,35,110,43) 96%, rgba(163,120,59,64) 98%, rgba(218, 120, 50,85) 97%, rgba(38,38,38,15) 100%); /*Standard*/
 }
 
 hr {
@@ -89,7 +89,7 @@ h3{
   color: #F2F2F2;
   font-weight: 300;
   font-size: 3em;
-  padding: 20px 0 0 200px;
+  padding: 20px 200px 0 0;
 }
 #tool-text{
   text-align:left;
@@ -104,21 +104,21 @@ h3{
 }
 #focus{
   /*color: #D47300;*/
-  color: #FFADAD;
+  color: #F2F2F2;
   font-weight: 400;
   font-size: 1.1em;
   padding: 20px 0px 20px 30px;
   margin:auto;
 }
 #focus2{
-  color: #FFADAD;
+  color: #F2F2F2;
   font-weight: 400;
   font-size: 0.5em;
   padding: 5px 0px 5px 5px;
   margin: auto;
 }
 #focus3{
-  color: #FFADAD;
+  color: #F2F2F2;
   font-weight: 400;
   font-size: 1.5em;
   padding: auto;
@@ -214,7 +214,7 @@ h3{
 }
 .footer{
   padding:0 30px 0 0;
-  color: #141414;
+  color:  #F2F2F2;
   text-align:right;
 }
 .footer:hover{
@@ -274,7 +274,7 @@ h3{
     border-style:solid;
     border-width: 1px 0 1px 0;
     /*border-color: #FF8D00;*/
-    border-color: #FFADAD;
+    border-color: #F2F2F2;
     color: #B5B5B5;
   }
 
@@ -290,7 +290,7 @@ h3{
     color: #F2F2F2;
     font-weight: 300;
     font-size: 2em;
-    padding: 20px 0 0 20px;
+    padding: 20px 0 0 0;
   }
 
   #fleximage{
@@ -305,13 +305,13 @@ h3{
     padding: 0 0 0 0;
   }
   #focus2{
-    color: #FFADAD;
+    color: #F2F2F2;
     font-weight: 400;
     font-size: 0.5em;
     margin: auto;
   }
   #focus3{
-    color: #FFADAD;
+    color: #F2F2F2;
     font-weight: 400;
     font-size: 1em;
     padding: 0;
@@ -360,7 +360,7 @@ h3{
     background-color: #212226;
     border-style:solid;
     border-width: 1px 0 1px 0;
-    border-color: #FFADAD;
+    border-color:  #F2F2F2;
     color: #B5B5B5;
     font-size: 1em;
   }
@@ -405,18 +405,18 @@ h3{
     color: #F2F2F2;
     font-weight: 300;
     font-size: 3em;
-    padding: 20px 0 0 200px;
+    padding: 20px 400px 0 0;
   }
 
   #focus{
     /*color: #D47300;*/
-    color:#FFADAD;
+    color:#F2F2F2;
     font-weight: 400;
     font-size: 1.4em;
     margin:auto;
   }
   #focus3{
-    color: #FFADAD;
+    color: #F2F2F2;
     font-weight: 400;
     font-size: 2em;
     padding: auto;
